@@ -12,10 +12,11 @@ export default function PiedDePage() {
         <div className="sm:col-span-2 lg:col-span-1">
           <div className="flex items-center gap-3">
             <Embleme className="h-10 w-10 text-accent" />
-            <span className="font-display text-lg font-bold leading-[1.1]">
+            <span className="font-serif text-lg font-medium leading-[1.15]">
               Le Journal
               <br />
-              des Humanoïdes
+              des{" "}
+              <em className="italic font-medium text-accent">Humanoïdes</em>
             </span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
@@ -75,7 +76,7 @@ export default function PiedDePage() {
           <ul className="mt-4 space-y-2 text-sm">
             <li>
               <Link href="/" className="transition-colors hover:text-accent">
-                La une
+                Couverture
               </Link>
             </li>
             <li>
@@ -92,8 +93,8 @@ export default function PiedDePage() {
 
       <div className="border-t border-rule">
         <p className="mx-auto max-w-6xl px-5 py-5 font-sans text-[0.66rem] uppercase tracking-[0.1em] text-muted">
-          © 2026 Le Journal des Humanoïdes — maquette de démonstration, articles
-          illustratifs.
+          © 2026 Le Journal des Humanoïdes — maquette de démonstration,
+          articles illustratifs.
         </p>
       </div>
     </footer>

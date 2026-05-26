@@ -7,10 +7,12 @@ export default function EnTete() {
   const rubriques = getRubriques();
 
   return (
-    <header className="border-b-2 border-ink">
+    <header className="border-b border-ink">
       <div className="border-b border-rule">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-2 font-sans text-[0.62rem] font-medium uppercase tracking-[0.16em] text-muted">
-          <span>L’hebdomadaire de la robotique humanoïde</span>
+          <Link href="/" className="transition-colors hover:text-accent">
+            ← Couverture
+          </Link>
           <span className="hidden sm:block">
             {dernier
               ? `N° ${dernier.numero} — ${formaterDate(dernier.date)}`
@@ -19,22 +21,26 @@ export default function EnTete() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-5 py-7 text-center sm:py-9">
+      <div className="mx-auto max-w-6xl px-5 py-6 text-center sm:py-8">
         <Link href="/" className="inline-block">
-          <h1 className="font-display text-[2.3rem] font-black leading-none tracking-tight transition-colors hover:text-accent sm:text-6xl">
-            Le Journal des Humanoïdes
+          <h1 className="font-serif text-[2.2rem] font-medium leading-none tracking-tight sm:text-5xl">
+            Le Journal des{" "}
+            <em className="italic font-medium text-accent">Humanoïdes</em>
           </h1>
         </Link>
-        <p className="mt-3 font-sans text-[0.62rem] uppercase tracking-[0.3em] text-muted sm:text-[0.68rem]">
+        <p className="mt-3 font-sans text-[0.62rem] uppercase tracking-[0.3em] text-muted sm:text-[0.66rem]">
           Comprendre les machines qui nous ressemblent
         </p>
       </div>
 
       <nav className="border-t border-rule">
-        <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1.5 px-5 py-3 font-sans text-[0.72rem] font-semibold uppercase tracking-[0.12em]">
+        <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1.5 px-5 py-3 font-sans text-[0.7rem] font-semibold uppercase tracking-[0.12em]">
           <li>
-            <Link href="/" className="transition-colors hover:text-accent">
-              La une
+            <Link
+              href={dernier ? `/numeros/${dernier.numero}` : "/numeros"}
+              className="transition-colors hover:text-accent"
+            >
+              Édition
             </Link>
           </li>
           {rubriques.map((r) => (
@@ -52,7 +58,7 @@ export default function EnTete() {
               href="/numeros"
               className="transition-colors hover:text-accent"
             >
-              Numéros
+              Archives
             </Link>
           </li>
           <li>
