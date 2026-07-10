@@ -1,0 +1,82 @@
+# Agentipedia autonomous curation.
+#
+# Every day: run the curation engine against the live web, validate the store,
+# rebuild the site, and commit whatever survived the rule. No human in the loop.
+#
+# Required repository secret: ANTHROPIC_API_KEY (an Anthropic API key; the
+# engine uses the web_search server tool). Without it the curate job fails
+# with a clear message and the store is left untouched.
+#
+# Optional: set the repository variable DEPLOY_PAGES=true (and enable GitHub
+# Pages, source "GitHub Actions") to publish the freshly built site.
+
+name: curate
+
+on:
+  schedule:
+    - cron: "17 5 * * *" # daily, 05:17 UTC
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: "Number of discovery queries"
+        default: "10"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: curate
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Run curation engine (live web search)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node engine/curate.mjs --queries "${{ github.event.inputs.queries || '10' }}"
+
+      - name: Validate store against the rule
+        run: node engine/validate.mjs
+
+      - name: Rebuild site
+        run: npm run build
+
+      - name: Commit updated store
+        run: |
+          git config user.name "agentipedia-curator"
+          git config user.email "curator@users.noreply.github.com"
+          git add data/entries.json data/rejections.json
+          if git diff --cached --quiet; then
+            echo "No changes this run."
+          else
+            git commit -m "curate: $(date -u +%F) automated discovery run"
+            git push
+          fi
+
+      - name: Upload site artifact
+        if: vars.DEPLOY_PAGES == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    if: vars.DEPLOY_PAGES == 'true'
+    needs: curate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

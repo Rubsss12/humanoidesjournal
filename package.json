@@ -1,16 +1,17 @@
 {
-  "name": "humanoidesjournal",
+  "name": "agentipedia",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "curate": "node engine/curate.mjs",
+    "validate": "node engine/validate.mjs"
   },
   "dependencies": {
-    "gray-matter": "^4.0.3",
-    "marked": "^18.0.4",
+    "@anthropic-ai/sdk": "^0.110.0",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
@@ -22,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "playwright": "^1.61.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

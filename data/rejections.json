@@ -1,0 +1,69 @@
+{
+  "runs": [
+    {
+      "run_id": "run-2026-07-10-bootstrap",
+      "date": "2026-07-10",
+      "operator": "manual-bootstrap (Claude agent session with live web search; same rule and validator as engine/curate.mjs)",
+      "model": "claude-fable-5 (interactive)",
+      "queries": [
+        "Klarna OpenAI AI assistant customer service two-thirds chats results",
+        "Mercado Libre Verdi AI platform Gemini developers deployment",
+        "Air India AI.g virtual assistant Azure OpenAI customer queries",
+        "Rakuten AI for Everyone OpenAI GPT deployment employees customers",
+        "Salesforce Agentforce customer company deployed live resolved conversations 2025",
+        "Sierra AI agents customers ADT SiriusXM Sonos deployment company",
+        "Bank of America Erica virtual assistant interactions milestone 2025",
+        "Decagon AI agents customers Notion Duolingo deployment support",
+        "DEWA Rammas AI assistant Dubai requests generative AI",
+        "Safaricom AI chatbot Zuri OR MTN South Africa AI assistant customers named",
+        "Telkomsel Veronika AI assistant OR Commonwealth Bank Ceba AI agent customers",
+        "Vodafone TOBi AI assistant customers ChatGPT Azure OpenAI upgrade",
+        "Carrefour Hopla OpenAI GPT-4 assistant courses shopping",
+        "Panasonic ConnectAI OR \"Panasonic Connect\" AI assistant employees deployment results",
+        "BBVA ChatGPT Enterprise OpenAI employees custom GPTs results",
+        "Nubank OpenAI GPT-4 customer service assistant results",
+        "Telstra \"One Sentence Summary\" OR \"Ask Telstra\" Azure OpenAI employees pilot results",
+        "JPMorgan LLM Suite employees rollout generative AI assistant",
+        "Trip.com TripGenie AI travel assistant usage results",
+        "Estonia Bürokratt government AI assistant services deployment",
+        "Emirates NBD AI assistant OR \"Ask EVA\" OR digital employee bank deployment named",
+        "Zomato Nugget AI agent customer support OR Swiggy AI assistant India deployment",
+        "Vodacom South Africa TOBi AI assistant OR Standard Bank AI agent deployment",
+        "Grab OpenAI partnership deployment OR DBS bank \"CSO Assistant\" OR AirAsia \"Ask Bo\" AI results"
+      ],
+      "candidates_seen": 42,
+      "accepted": 35,
+      "updated": 0,
+      "rejections": [
+        {
+          "candidate": "\"40% of the Fortune 50\" (Sierra customers) / Sierra",
+          "reason": "Company not named: Sierra's market-reach claim covers unnamed Fortune 50 companies — a real, identifiable organization name is required."
+        },
+        {
+          "candidate": "MTN / (unnamed AI assistant)",
+          "reason": "No retrieved source names a specific solution deployed by MTN — solution field missing, no entry."
+        },
+        {
+          "candidate": "Standard Bank / (unnamed AI agent)",
+          "reason": "No retrieved source names a specific solution deployed by Standard Bank — solution field missing, no entry."
+        },
+        {
+          "candidate": "Swiggy / (unnamed AI assistant)",
+          "reason": "Search returned no source naming a Swiggy AI assistant deployment — no source, no entry."
+        },
+        {
+          "candidate": "Emirates NBD / Empathy Assistant",
+          "reason": "Single passing mention in one article with no deployment detail or corroboration — insufficient evidence, rejected rather than guessed."
+        },
+        {
+          "candidate": "Rakuten Viber / ChatGPT integration",
+          "reason": "Out of scope: a consumer messaging-app feature giving users ChatGPT access, not the company deploying an agent for its own operations."
+        },
+        {
+          "candidate": "JPMorgan Chase / AI-powered client concierges",
+          "reason": "Retrieved source describes a future goal with no named product or deployment date — announced intentions without a named solution are rejected."
+        }
+      ]
+    }
+  ]
+}

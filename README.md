@@ -1,89 +1,86 @@
-# Le Journal des Humanoïdes
+# Agentipedia
 
-L’hebdomadaire en ligne qui décrypte l’essor des robots humanoïdes — industrie,
-technologie, société. Sans emballement ni catastrophisme.
+The living encyclopedia of AI agents at work: a public, self-updating catalog
+of real deployments of AI agents inside **named companies**, worldwide. Every
+entry names both the company and the exact solution powering it, and links the
+retrieved sources that prove it. **No source, no entry.**
 
-Site éditorial construit avec **Next.js 16** (App Router) et **Tailwind CSS v4**.
-Le contenu est rédigé en Markdown et publié par numéro hebdomadaire. Le site est
-entièrement statique.
+Built with **Next.js 16** (App Router, static export) and **Tailwind CSS v4**.
+The data store is a single JSON file; an autonomous curation engine keeps it
+current.
 
-## Démarrer
+## The one rule
+
+An entry is valid only when both fields are named and verified against a
+retrieved source:
+
+1. **The company** — a real, identifiable organization by its actual name
+   (Klarna, JPMorgan, Rakuten, Air India), never “a large retailer”.
+2. **The named solution** — a named product, platform or internally branded
+   agent (Salesforce Agentforce, Sierra, Bank of America Erica), never
+   “a chatbot”.
+
+If either is missing, generic, or unverifiable, the candidate is rejected and
+the rejection is logged with a one-line reason.
+
+## Layout
+
+```
+data/
+  entries.json      the store — single source of truth, human-auditable
+  rejections.json   every curation run with every rejection and its reason
+engine/
+  schema.mjs        data model + the rule, enforced in deterministic code
+  dedupe.mjs        same company + same solution = update, never a duplicate
+  queries.mjs       rotating discovery-query matrix (regions × industries × languages)
+  curate.mjs        the autonomous run: live web search -> extract -> validate -> write
+  validate.mjs      validates the whole store; runs in CI before every build
+src/                the website (reads data/entries.json at build time)
+.github/workflows/
+  curate.yml        daily schedule: curate -> validate -> rebuild -> commit
+  ci.yml            store validation + lint + build on every PR
+```
+
+## Run the site
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
+npm run dev        # http://localhost:3000
+npm run build      # static export in ./out — deploy on any static host
 ```
 
-Autres commandes : `npm run build` (build de production), `npm run start` (sert
-le build), `npm run lint`.
+## Run the curation engine
 
-## Structure
-
-```
-content/
-  numeros/      un fichier Markdown par numéro (l’éditorial)
-  articles/     un fichier Markdown par article
-src/
-  app/          routes (App Router) : une, numéro, article, rubrique, archives
-  components/   composants d’interface
-  lib/          lecture du contenu, formatage
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...   # needs web_search access
+npm run curate                        # one discovery run, writes data/
+npm run curate -- --dry-run           # same, but writes nothing
+npm run validate                      # check the whole store against the rule
 ```
 
-## Publier un nouveau numéro
+The engine uses the Anthropic API (`claude-opus-4-8` by default, override with
+`AGENTIPEDIA_MODEL`) with the `web_search` server tool. Model output is only
+ever a *candidate*: deterministic code recomputes ids, dates and confidence
+caps, verifies that every cited URL was actually retrieved by the run’s live
+searches, applies the rule, dedupes, and logs rejections. The engine never
+pauses to ask a human anything.
 
-Le journal paraît chaque semaine. Un numéro = un éditorial + plusieurs articles.
+### Schedule
 
-### 1. Créer le numéro — `content/numeros/03.md`
+`.github/workflows/curate.yml` runs daily at 05:17 UTC (and on demand via
+*Run workflow*). Add the repository secret **`ANTHROPIC_API_KEY`** to enable
+it. Optionally set the repository variable `DEPLOY_PAGES=true` (with GitHub
+Pages configured to deploy from Actions) to publish `./out` after each run;
+for project pages set `NEXT_BASE_PATH=/<repo>` in the build step.
 
-```markdown
----
-numero: 3
-titre: "Le titre du numéro"
-sousTitre: "Une accroche courte"
-chapo: "Résumé affiché sur la page d’accueil."
-date: "2026-05-26"
----
+## Design
 
-Le texte de l’éditorial, signé *La rédaction*.
-```
+The interface follows the HUB Institute / HUBFORUM Paris look: mauve and
+violet on clean light backgrounds, dark violet hero, confident uppercase
+typography (Archivo), generous whitespace. All colors live in CSS variables at
+the top of `src/app/globals.css` — swap the exact brand mauve in one place.
 
-### 2. Ajouter des articles — `content/articles/mon-article.md`
+## Correcting an entry
 
-Le nom du fichier devient l’URL de l’article (`/articles/mon-article`).
-
-```markdown
----
-titre: "Le titre de l’article"
-numero: 3
-date: "2026-05-26"
-auteur: "Prénom Nom"
-rubrique: "Décryptage"
-chapo: "Le chapô : une ou deux phrases."
-aLaUne: true
-rang: 1
----
-
-Le corps de l’article, en Markdown.
-```
-
-- `rubrique` : Décryptage, Industrie, Technologie, Société, Tribune… (toute
-  nouvelle rubrique est créée automatiquement).
-- `aLaUne` : met l’article en avant sur la page d’accueil.
-- `rang` : ordonne les articles d’un numéro (`1` = article de tête).
-
-## Rédaction : manuel + IA
-
-Le journal suit un modèle hybride. La rédaction humaine choisit les angles,
-hiérarchise l’information et valide. L’IA sert d’appui : recherche, synthèse de
-sources, premières versions. Le format Markdown rend ce flux simple — on génère
-un brouillon, on le relit, on le corrige, on le signe, on le publie.
-
-## Déploiement
-
-`next build` produit un site statique, déployable sur Vercel, Netlify ou tout
-hébergeur de fichiers statiques.
-
----
-
-Maquette de démonstration : les articles actuels sont des textes illustratifs,
-fondés sur des connaissances générales du secteur.
+The store is designed to be audited: edit `data/entries.json` in a pull
+request. CI re-validates every entry against the rule before anything ships.

@@ -1,0 +1,1537 @@
+{
+  "updated_at": "2026-07-10T16:00:00.000Z",
+  "entries": [
+    {
+      "id": "1-800accountant--agentforce",
+      "company": "1-800Accountant",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Resolves customer chat engagements about tax and accounting services autonomously, including during peak tax season.",
+      "department": "Customer service",
+      "industry": "Professional services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of chat engagements resolved autonomously during 2025 tax week",
+          "value": "70%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named deployment with a concrete metric, but the only retrieved evidence is the vendor's own success-story page; capped until independently confirmed."
+    },
+    {
+      "id": "adt--sierra",
+      "company": "ADT",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Sierra",
+      "vendor": "Sierra",
+      "use_case": "Runs conversational agents for customer service, billing questions and lead qualification in ADT's home-security business.",
+      "department": "Customer service",
+      "industry": "Security services",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://sierra.ai/customers",
+          "title": "Our customers: Sierra is trusted by industry leaders with millions of customers",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://getperspective.ai/blog/sierra-ai-customer-experience-conversational-agent-research-2026",
+          "title": "Sierra AI's Customer Research Strategy: How Bret Taylor's $4.5B Conversational Agent Company Listens to Enterprises",
+          "publisher": "Perspective AI blog",
+          "source_type": "other",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Deployment is named on the vendor's customer page and described by a third-party blog; no primary press coverage or metrics retrieved."
+    },
+    {
+      "id": "air-india--ai-g",
+      "company": "Air India",
+      "company_country": "India",
+      "region": "South Asia",
+      "solution_name": "AI.g",
+      "vendor": "Microsoft (Azure OpenAI)",
+      "use_case": "Answers customer queries such as booking changes and refunds as a generative-AI virtual agent built on Azure OpenAI GPT-4 with retrieval-augmented generation.",
+      "department": "Customer service",
+      "industry": "Airlines",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer queries handled daily",
+          "value": "≈40,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Conversations resolved since launch",
+          "value": "13 million+",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Share of interactions fully automated",
+          "value": "97%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en/customers/story/26047-air-india-azure-openai-in-foundry-models",
+          "title": "How Azure AI helped Air India reinvent customer service by answering 40,000 daily queries instantly",
+          "publisher": "Microsoft Customer Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.airindia.com/in/en/newsroom/press-release/air-india-successfully-deploys-airline-industry-s-first-generati.html",
+          "title": "Air India successfully deploys airline industry's first generative AI virtual agent, powered by Microsoft Azure OpenAI service",
+          "publisher": "Air India Newsroom",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.indiatvnews.com/business/news/air-india-generative-ai-virtual-agent-maharaja-microsoft-azure-openai-service-introduce-more-ai-features-to-address-customer-queries-2023-11-10-902160",
+          "title": "Air India becomes world's first airline to launch virtual AI agent",
+          "publisher": "India TV News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Company press release plus vendor case study and independent Indian press; usage metrics come from the vendor side and are not independently audited."
+    },
+    {
+      "id": "airasia--ask-bo",
+      "company": "AirAsia",
+      "company_country": "Malaysia",
+      "region": "Southeast Asia",
+      "solution_name": "Ask Bo",
+      "vendor": "",
+      "use_case": "Handles passenger self-service in multiple languages — live flight status, boarding information, flight changes, refunds and baggage questions — replacing the airline's earlier chatbot AVA.",
+      "department": "Customer service",
+      "industry": "Airlines",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://newsroom.airasia.com/news/capital-a-welcomes-ask-bo",
+          "title": "\"We have listened.\" Capital A fires chatbot AVA and introduces new AI-powered 'Ask Bo'",
+          "publisher": "AirAsia Newsroom",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.marketing-interactive.com/airasia-fires-ai-chatbot-ava-and-replaces-her-with-ask-bo",
+          "title": "AirAsia fires AI chatbot 'AVA' and replaces her with Bo",
+          "publisher": "Marketing-Interactive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://bernama.com/en/news.php?id=2162682",
+          "title": "Capital A introduces new AI-powered 'Ask Bo' virtual assistant",
+          "publisher": "Bernama",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Company announcement corroborated by Malaysia's national news agency and trade press; no performance metrics were reported in the retrieved sources."
+    },
+    {
+      "id": "bank-of-america--erica",
+      "company": "Bank of America",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Erica",
+      "vendor": "In-house (Bank of America)",
+      "use_case": "Acts as the bank's virtual financial assistant for clients — balances, insights, payments — and, as Erica for Employees, answers staff IT and HR questions.",
+      "department": "Customer service",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Client interactions since launch",
+          "value": "3 billion+",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Average monthly interactions",
+          "value": "58 million+",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Reduction in IT service desk calls (Erica for Employees)",
+          "value": "50%",
+          "source_type": "press_release"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2025/08/a-decade-of-ai-innovation--bofa-s-virtual-assistant-erica-surpas.html.html",
+          "title": "A Decade of AI Innovation: BofA's Virtual Assistant Erica Surpasses 3 Billion Client Interactions",
+          "publisher": "Bank of America Newsroom",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.customerexperiencedive.com/news/bank-of-america-erica-virtual-assistants/758334/",
+          "title": "How Bank of America's Erica raised the stakes for virtual assistants",
+          "publisher": "CX Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reason": "Long-running deployment documented by the bank's own newsroom and covered by independent trade press; usage figures are company-reported."
+    },
+    {
+      "id": "bbva--chatgpt-enterprise",
+      "company": "BBVA",
+      "company_country": "Spain",
+      "region": "Europe",
+      "solution_name": "ChatGPT Enterprise",
+      "vendor": "OpenAI",
+      "use_case": "Gives employees a general-purpose AI workbench and lets teams build custom GPTs for legal, risk, customer service, finance and marketing workflows across the bank.",
+      "department": "Company-wide",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Employees covered by the rollout",
+          "value": "120,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Custom GPTs created by employees",
+          "value": "20,000+ (≈4,000 in frequent use)",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Time saved per employee per week during pilot",
+          "value": "≈3 hours",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://openai.com/index/bbva/",
+          "title": "BBVA puts AI at the core of banking with OpenAI",
+          "publisher": "OpenAI",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.fstech.co.uk/fst/BBVA_To_Roll_Out_ChatGPT_Across_120000_Strong_Global_Workforce.php",
+          "title": "BBVA to roll out ChatGPT across 120,000-strong global workforce",
+          "publisher": "FStech",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.artificialintelligence-news.com/news/bbva-embeds-ai-into-banking-workflows-using-chatgpt-enterprise/",
+          "title": "BBVA embeds AI into banking workflows using ChatGPT Enterprise",
+          "publisher": "AI News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Vendor case study corroborated by independent fintech press; adoption metrics originate from BBVA/OpenAI rather than an external audit."
+    },
+    {
+      "id": "carrefour--hopla",
+      "company": "Carrefour",
+      "company_country": "France",
+      "region": "Europe",
+      "solution_name": "Hopla",
+      "vendor": "OpenAI",
+      "use_case": "Advises shoppers on carrefour.fr — building baskets by budget or dietary constraints and suggesting recipes — using a GPT-4-based chatbot, extended in 2026 to agentic shopping inside ChatGPT.",
+      "department": "E-commerce",
+      "industry": "Retail",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Product sheets enriched with generative AI",
+          "value": "2,000+",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.carrefour.com/en/news/2023/carrefour-integrates-openai-technologies-and-launches-generative-ai-powered-shopping",
+          "title": "Carrefour integrates OpenAI technologies and launches a generative AI-powered shopping experience",
+          "publisher": "Carrefour Group",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.clubic.com/technologies-d-avenir/intelligence-artificielle/actualite-473772-une-ia-pour-vous-aider-a-faire-vos-courses-carrefour-presente-hopla-base-sur-chatgpt-4.html",
+          "title": "Une IA pour vous aider à faire vos courses ? Carrefour présente Hopla, basé sur ChatGPT-4",
+          "publisher": "Clubic",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.ecommercemag.fr/retail-1220/commerce-agentique-carrefour-deploie-ses-services-sur-chatgpt-56728",
+          "title": "Commerce agentique : Carrefour déploie ses services sur ChatGPT",
+          "publisher": "E-commerce Mag",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reason": "Official company announcement confirmed by multiple independent French tech and retail outlets."
+    },
+    {
+      "id": "chime--decagon",
+      "company": "Chime",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Decagon",
+      "vendor": "Decagon",
+      "use_case": "Resolves customer support conversations for the fintech across both chat and voice channels.",
+      "department": "Customer service",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Resolution rate across chat and voice",
+          "value": "70%",
+          "source_type": "other"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://decagon.ai/",
+          "title": "Decagon | The AI concierge for every customer",
+          "publisher": "Decagon",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.assembled.com/page/decagon-ai",
+          "title": "What is Decagon AI? Benefits, Use Cases, & Alternatives",
+          "publisher": "Assembled",
+          "source_type": "other",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Customer named by the vendor and echoed by a third-party guide; the resolution metric is not independently verified."
+    },
+    {
+      "id": "commonwealth-bank--ceba",
+      "company": "Commonwealth Bank",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "solution_name": "Ceba",
+      "vendor": "",
+      "use_case": "Assists banking customers 24/7 with more than 200 tasks such as activating cards, checking balances, making payments and getting cardless cash.",
+      "department": "Customer service",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Banking tasks covered",
+          "value": "200+",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Customers with access at launch",
+          "value": "6.2 million",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.commbank.com.au/guidance/newsroom/cba-launches-chatbot-named-CEBA-201801.html",
+          "title": "Commonwealth Bank launches chatbot named Ceba",
+          "publisher": "Commonwealth Bank Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Named deployment on the bank's own newsroom; only one source retrieved and no recent independent coverage in this run."
+    },
+    {
+      "id": "dbs-bank--cso-assistant",
+      "company": "DBS Bank",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "solution_name": "CSO Assistant",
+      "vendor": "In-house (DBS)",
+      "use_case": "Transcribes customer calls in real time and searches the bank's knowledge base live so its 500 customer service officers can resolve queries faster.",
+      "department": "Customer service",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Transcription and solutioning accuracy in pilot",
+          "value": "≈100%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Expected reduction in call handling time",
+          "value": "up to 20%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Customer service officers equipped",
+          "value": "500",
+          "source_type": "press_release"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.dbs.com/newsroom/DBS_empowers_its_Customer_Service_Officers_with_Gen_AI_powered_virtual_assistant_to_reduce_toil_and_enhance_customer_experience",
+          "title": "DBS empowers its Customer Service Officers with Gen AI-powered virtual assistant",
+          "publisher": "DBS Newsroom",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.computerweekly.com/news/366622932/CW-Innovation-Awards-DBS-AI-assistant-slashes-call-times-and-boosts-productivity",
+          "title": "CW Innovation Awards: DBS AI assistant slashes call times and boosts productivity",
+          "publisher": "Computer Weekly",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Bank press release plus independent Computer Weekly coverage including an innovation award; pilot metrics are bank-reported."
+    },
+    {
+      "id": "dubai-electricity-and-water-authority-dewa--rammas",
+      "company": "Dubai Electricity and Water Authority (DEWA)",
+      "company_country": "United Arab Emirates",
+      "region": "Middle East",
+      "solution_name": "Rammas",
+      "vendor": "",
+      "use_case": "Serves as the utility's virtual employee, answering customer inquiries and handling procedural services like bill payment in Arabic and English, upgraded with generative AI.",
+      "department": "Customer service",
+      "industry": "Utilities",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Inquiries handled since 2017 launch",
+          "value": "13 million+",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Inquiries answered in 2024",
+          "value": "2 million",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2025/01/dewas-investment-in-generative-ai-enhances",
+          "title": "DEWA's investment in generative AI enhances the efficiency and productivity of its virtual employee Rammas",
+          "publisher": "DEWA",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.dubai92.com/news/uae/dewa-deploys-agentic-ai-across-its-digital-platforms/",
+          "title": "DEWA deploys agentic AI across its digital platforms",
+          "publisher": "Dubai 92",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.middleeastainews.com/p/dewa-ai-assistant-two-million-queries",
+          "title": "DEWA's AI assistant handles 2 million enquiries",
+          "publisher": "Middle East AI News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Official utility communications confirmed by independent regional media; volume figures are self-reported by DEWA."
+    },
+    {
+      "id": "duolingo--decagon",
+      "company": "Duolingo",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Decagon",
+      "vendor": "Decagon",
+      "use_case": "Deflects the bulk of incoming learner support requests with AI agents that went live about a month after the project started.",
+      "department": "Customer service",
+      "industry": "Education technology",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of incoming support volume deflected",
+          "value": "80%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://decagon.ai/case-studies/duolingo",
+          "title": "Duolingo Customer Success Story",
+          "publisher": "Decagon",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Only the vendor's own case study was retrieved; capped until an independent source confirms the deployment."
+    },
+    {
+      "id": "emirates-nbd--eva",
+      "company": "Emirates NBD",
+      "company_country": "United Arab Emirates",
+      "region": "Middle East",
+      "solution_name": "EVA",
+      "vendor": "In-house (Emirates NBD)",
+      "use_case": "Answers phone-banking customer calls with voice and chat AI in English and Arabic, the first voice-based banking assistant launched in MENA.",
+      "department": "Customer service",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer calls handled per month",
+          "value": "≈500,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Speech recognition accuracy (English / Arabic)",
+          "value": "≈90% / 86%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.emiratesnbd.com/en/media-center/emirates-nbd-announces-eva-emirates-nbd-virtual-assistant",
+          "title": "Emirates NBD announces 'EVA' – Emirates NBD Virtual Assistant",
+          "publisher": "Emirates NBD",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.theasianbanker.com/updates-and-articles/emiratesnbd-leverages-on-virtual-assistant-for-phone-banking-optimisation",
+          "title": "Emirates NBD leverages on virtual assistant for phone banking optimisation",
+          "publisher": "The Asian Banker",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.finextra.com/newsarticle/29796/emirates-nbd-tests-virtual-assistant-eva",
+          "title": "Emirates NBD tests virtual assistant EVA",
+          "publisher": "Finextra",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Bank announcement with independent banking-press coverage and usage figures reported by The Asian Banker."
+    },
+    {
+      "id": "government-of-estonia--burokratt",
+      "company": "Government of Estonia",
+      "company_country": "Estonia",
+      "region": "Europe",
+      "solution_name": "Bürokratt",
+      "vendor": "",
+      "use_case": "Provides citizens one conversational front door to public services, routing voice or text requests to agents run by individual government bodies.",
+      "department": "Public services",
+      "industry": "Government",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Government agencies live on the network",
+          "value": "18",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Investment to date (≈€13M budgeted over four years)",
+          "value": "≈€1.5 million",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://govinsider.asia/intl-en/article/estonia-eyes-cross-border-interoperability-for-burokratt-its-siri-of-public-services",
+          "title": "Estonia eyes cross-border interoperability for Bürokratt, its 'Siri of public services'",
+          "publisher": "GovInsider",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.computerweekly.com/news/252510561/AI-assistant-Buerokratt-to-reduce-bureaucracy-in-Estonian-government",
+          "title": "AI assistant Bürokratt to reduce bureaucracy in Estonian government",
+          "publisher": "Computer Weekly",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://e-estonia.com/estonias-new-virtual-assistant-aims-to-rewrite-the-way-people-interact-with-public-services/",
+          "title": "Estonia's new virtual assistant aims to rewrite the way people interact with public services",
+          "publisher": "e-Estonia",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Public-sector deployment documented by official e-Estonia channels and independent government-technology press."
+    },
+    {
+      "id": "grab--chatgpt-enterprise",
+      "company": "Grab",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "solution_name": "ChatGPT Enterprise",
+      "vendor": "OpenAI",
+      "use_case": "Pilots ChatGPT Enterprise for employee productivity and applies OpenAI vision models to automate map-making from street imagery for GrabMaps.",
+      "department": "Company-wide",
+      "industry": "Ride-hailing & delivery",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.grab.com/sg/press/others/grab-and-openai-announce-strategic-collaboration-first-of-its-kind-in-southeast-asia/",
+          "title": "Grab and OpenAI announce strategic collaboration, first of its kind in Southeast Asia",
+          "publisher": "Grab",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.digitalnewsasia.com/business/grab-openai-announce-collaboration-strengthen-grabs-use-ai",
+          "title": "Grab, OpenAI announce strategic collaboration, first of its kind in Southeast Asia",
+          "publisher": "Digital News Asia",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2024/grab-teams-with-openai-integrate-ai-ride-hailing-delivery-business/",
+          "title": "Grab Teams With OpenAI to Integrate AI in Ride-Hailing, Delivery Business",
+          "publisher": "PYMNTS",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "Partnership and pilot confirmed by company release and independent press, but retrieved sources describe intent and early pilots rather than measured production results."
+    },
+    {
+      "id": "grupo-globo--agentforce",
+      "company": "Grupo Globo",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Handles subscriber conversations for the Brazilian media group with an AI agent that outperformed its previous bot on retention.",
+      "department": "Customer service",
+      "industry": "Media & entertainment",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Retention-rate increase vs previous bot",
+          "value": "+22%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named customer and metric, but the only retrieved evidence is the vendor's success-story page; capped until independently confirmed."
+    },
+    {
+      "id": "jpmorgan-chase--llm-suite",
+      "company": "JPMorgan Chase",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "LLM Suite",
+      "vendor": "In-house portal (OpenAI and Anthropic models)",
+      "use_case": "Gives employees a portal to frontier language models for drafting, document summarization, earnings analysis and research across the bank.",
+      "department": "Company-wide",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Employees using LLM Suite",
+          "value": "≈250,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Estimated time saved per user per week",
+          "value": "3–6 hours",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2024/08/09/jpmorgan-chase-ai-artificial-intelligence-assistant-chatgpt-openai.html",
+          "title": "JPMorgan Chase is giving its employees an AI assistant powered by ChatGPT maker OpenAI",
+          "publisher": "CNBC",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.americanbanker.com/news/how-jpmorganchase-democratized-employee-access-to-gen-ai",
+          "title": "How JPMorganChase democratized employee access to gen AI",
+          "publisher": "American Banker",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.jpmorganchase.com/about/technology/blog/llmsuite-ab-award",
+          "title": "LLM Suite named 2025 \"Innovation of the Year\" by American Banker",
+          "publisher": "JPMorgan Chase",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.ciodive.com/news/JPMorgan-Chase-LLM-Suite-generative-ai-employee-tool/726772/",
+          "title": "JPMorgan Chase to equip 140K workers with generative AI tool",
+          "publisher": "CIO Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.85,
+      "confidence_reason": "Extensively covered by independent business press (CNBC, American Banker, CIO Dive) plus company channels; earlier 140K-employee figure grew to ≈250K as the rollout expanded."
+    },
+    {
+      "id": "klarna--klarna-ai-assistant",
+      "company": "Klarna",
+      "company_country": "Sweden",
+      "region": "Europe",
+      "solution_name": "Klarna AI assistant",
+      "vendor": "OpenAI",
+      "use_case": "Handles customer service chats end to end — refunds, returns and payment issues — across Klarna's markets in more than 35 languages.",
+      "department": "Customer service",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of customer service chats handled in first month",
+          "value": "two-thirds (2.3M conversations)",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Equivalent full-time agents",
+          "value": "700",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Estimated profit improvement in 2024",
+          "value": "$40 million",
+          "source_type": "press_release"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+          "title": "Klarna AI assistant handles two-thirds of customer service chats in its first month",
+          "publisher": "Klarna",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://openai.com/index/klarna/",
+          "title": "Klarna's AI assistant does the work of 700 full-time agents",
+          "publisher": "OpenAI",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://blog.pragmaticengineer.com/klarnas-ai-chatbot/",
+          "title": "Klarna's AI chatbot: how revolutionary is it, really?",
+          "publisher": "The Pragmatic Engineer",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reason": "Company press release and vendor case study with independent technical analysis; metrics are company-reported and Klarna later reintroduced human agents for complex cases."
+    },
+    {
+      "id": "mercado-libre--verdi",
+      "company": "Mercado Libre",
+      "company_country": "Argentina",
+      "region": "Latin America",
+      "solution_name": "Verdi",
+      "vendor": "OpenAI",
+      "use_case": "Serves as the internal AI development platform on GPT-4o that powers applications such as customer-service mediation and logistics workflows for the e-commerce group's 17,000 developers.",
+      "department": "Software engineering",
+      "industry": "E-commerce",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of customer-service mediation handled on one major site",
+          "value": "10%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Developers supported",
+          "value": "17,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://openai.com/index/mercado-libre/",
+          "title": "Introducing Verdi, an AI dev platform powered by GPT-4o",
+          "publisher": "OpenAI",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://viatea.es/noticias/mercado-libre-verdi-ia/",
+          "title": "Mercado Libre lanza Verdi, una plataforma impulsada por IA",
+          "publisher": "Viatea",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Vendor case study echoed by Spanish-language tech press; metrics are vendor-reported. Retrieved sources attribute Verdi to OpenAI GPT-4o."
+    },
+    {
+      "id": "notion--decagon",
+      "company": "Notion",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Decagon",
+      "vendor": "Decagon",
+      "use_case": "Automates customer support conversations for the productivity-software maker, speeding up ticket resolution.",
+      "department": "Customer service",
+      "industry": "Software & technology",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Ticket resolution speed improvement",
+          "value": "34% faster",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://decagon.ai/",
+          "title": "Decagon | The AI concierge for every customer",
+          "publisher": "Decagon",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named on the vendor's site with a metric; no independent source retrieved, so confidence is capped."
+    },
+    {
+      "id": "nubank--call-center-copilot-openai-gpt-4o",
+      "company": "Nubank",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "solution_name": "Call Center Copilot (OpenAI GPT-4o)",
+      "vendor": "OpenAI",
+      "use_case": "Assists call-center agents in real time with reply suggestions, chat summaries and guidance, alongside a GPT-4o customer assistant that answers chats directly before escalating.",
+      "department": "Customer service",
+      "industry": "Financial services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Tier-1 inquiries resolved by the AI assistant",
+          "value": "55%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Monthly chats handled",
+          "value": "2 million+",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Query resolution speed",
+          "value": "2.3x faster",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://openai.com/index/nubank/",
+          "title": "Nubank elevates customer experiences with OpenAI",
+          "publisher": "OpenAI",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.finextra.com/newsarticle/45629/nubank-partners-openai-to-smooth-customer-experience",
+          "title": "Nubank partners OpenAI to smooth customer experience",
+          "publisher": "Finextra",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.fstech.co.uk/fst/Nubank_partners_with_openai_on_gen_ai_rollout.php",
+          "title": "Nubank partners with OpenAI on genAI rollout",
+          "publisher": "FStech",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Vendor case study confirmed by independent fintech press; performance metrics are vendor-published."
+    },
+    {
+      "id": "opentable--agentforce",
+      "company": "OpenTable",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Answers restaurant and diner web queries — reservations, loyalty points, account questions — as an AI agent for the booking platform.",
+      "department": "Customer service",
+      "industry": "Hospitality",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of restaurant web queries handled after three weeks",
+          "value": "73%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named customer and metric from the vendor's success-story page only; capped until independently confirmed."
+    },
+    {
+      "id": "panasonic-connect--connectai",
+      "company": "Panasonic Connect",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "solution_name": "ConnectAI",
+      "vendor": "Microsoft (Azure OpenAI)",
+      "use_case": "Answers employee questions and drafts documents company-wide as an internal generative-AI assistant rolled out to all domestic staff in February 2023.",
+      "department": "Company-wide",
+      "industry": "Electronics",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Employees covered in Japan",
+          "value": "12,500",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Questions asked per day",
+          "value": "≈5,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Annual working hours saved (2024)",
+          "value": "448,000",
+          "source_type": "other"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/source/asia/features/not-if-but-when-why-japans-panasonic-connect-is-going-all-in-on-ai/",
+          "title": "Not if but when: Why Japan's Panasonic Connect is going all in on AI",
+          "publisher": "Microsoft Source Asia",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://asia.nikkei.com/Business/Companies/Panasonic-unit-deploys-ChatGPT-style-AI-to-improve-productivity",
+          "title": "Panasonic unit deploys ChatGPT-style AI to improve productivity",
+          "publisher": "Nikkei Asia",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://note.com/masamasa11_12/n/nb2f6cf2148b6",
+          "title": "Panasonic Connect's company-wide deployment of ConnectAI — 448,000 hours of annual savings",
+          "publisher": "note.com (Masami Hamasaki)",
+          "source_type": "other",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Covered by Nikkei Asia and Microsoft's case study; the 448,000-hour figure comes from a secondary write-up citing the company's July 2025 press release."
+    },
+    {
+      "id": "rakuten--openai-codex",
+      "company": "Rakuten",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "solution_name": "OpenAI Codex",
+      "vendor": "OpenAI",
+      "use_case": "Runs as a core coding agent in the engineering stack, helping developers fix issues and ship code faster.",
+      "department": "Software engineering",
+      "industry": "E-commerce",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Issue resolution speed",
+          "value": "2x faster",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://openai.com/index/rakuten/",
+          "title": "Rakuten fixes issues twice as fast with Codex",
+          "publisher": "OpenAI",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Only the vendor's case study was retrieved for this specific deployment; capped until independently confirmed."
+    },
+    {
+      "id": "rakuten--rakuten-ai",
+      "company": "Rakuten",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "solution_name": "Rakuten AI",
+      "vendor": "In-house (with OpenAI models and Rakuten AI 7B)",
+      "use_case": "Acts as the group's branded AI assistant layer — helping employees draft sales materials and powering customer-facing tools such as Rakuten Mobile's voice assistant for 9.3 million subscribers.",
+      "department": "Company-wide",
+      "industry": "E-commerce",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://global.rakuten.com/corp/ai/",
+          "title": "Rakuten AI",
+          "publisher": "Rakuten Group",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://rakuten.today/blog/how-are-ai-voice-agents-changing-customer-service-rakuten-mobile-collaborates-with-openai-to-integrate-new-technology.html",
+          "title": "How are AI voice agents changing customer service? Rakuten Mobile collaborates with OpenAI",
+          "publisher": "Rakuten Today",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Documented on the company's official channels; no independent coverage retrieved in this run and no audited metrics."
+    },
+    {
+      "id": "safaricom--zuri",
+      "company": "Safaricom",
+      "company_country": "Kenya",
+      "region": "Africa",
+      "solution_name": "Zuri",
+      "vendor": "",
+      "use_case": "Handles customer care for the telecom — M-PESA reversals, bundle purchases, balance checks and subscription management — across WhatsApp, Messenger, Telegram, SMS, web and the mySafaricom app.",
+      "department": "Customer service",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customers served",
+          "value": "8 million across 7 platforms",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://newsroom.safaricom.co.ke/tracking-zuri-safaricoms-customer-care-chatbot/",
+          "title": "Tracking Zuri: Safaricom's customer care chatbot",
+          "publisher": "Safaricom Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.safaricom.co.ke/media-center-landing/press-releases/safaricom-introduces-interactive-customer-care-chatbot",
+          "title": "Safaricom Introduces Interactive Customer Care Chatbot",
+          "publisher": "Safaricom",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://cioafrica.co/safaricoms-chat-bot-zuri-helping-to-ease-tedious-processes/",
+          "title": "Safaricom's Chat bot, Zuri helping to ease tedious processes",
+          "publisher": "CIO Africa",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Company channels plus independent African tech press; usage figures are company-reported."
+    },
+    {
+      "id": "salesforce--agentforce",
+      "company": "Salesforce",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Provides 24/7 AI support on help.salesforce.com, resolving most customer questions autonomously as the company's own largest Agentforce deployment.",
+      "department": "Customer service",
+      "industry": "Software & technology",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer conversations handled on help.salesforce.com",
+          "value": "1 million+ (2M+ across support)",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Share of visitor issues resolved",
+          "value": "84–85%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://fortune.com/2025/07/10/salesforce-surpasses-1-million-ai-agent-customer-conversations-finance-chief-cfo/",
+          "title": "Salesforce surpasses 1 million AI agent-customer conversations, says finance chief",
+          "publisher": "Fortune",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.salesforce.com/customer-stories/agentforce-for-customer-support/",
+          "title": "Agentforce resolves 85% of visitor issues on the Salesforce Help site",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.salesforce.com/blog/support-requests-agentforce/",
+          "title": "2 Million Conversations Handled by Agentforce, and We're Just Getting Started",
+          "publisher": "Salesforce",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Volume milestone reported independently by Fortune; resolution rates come from Salesforce's own pages about its self-deployment."
+    },
+    {
+      "id": "siriusxm--harmony",
+      "company": "SiriusXM",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Harmony",
+      "vendor": "Sierra",
+      "use_case": "Serves subscribers as SiriusXM's branded AI customer-support agent, and is the first deployment of Sierra's Agent Data Platform for longer-term customer context.",
+      "department": "Customer service",
+      "industry": "Media & entertainment",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://sierra.ai/blog/siriusxm-adp-announcement",
+          "title": "SiriusXM and Sierra announce a deeper collaboration with the launch of Agent Data Platform",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Branded agent named in the vendor's announcement only; capped until independent coverage confirms it."
+    },
+    {
+      "id": "sonos--sierra",
+      "company": "Sonos",
+      "company_country": "United States",
+      "region": "North America",
+      "solution_name": "Sierra",
+      "vendor": "Sierra",
+      "use_case": "Handles tier-1 product support — speaker setup, troubleshooting and multi-room configuration — replacing a queue that drove millions of contacts a year.",
+      "department": "Customer service",
+      "industry": "Consumer electronics",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://sierra.ai/customers",
+          "title": "Our customers: Sierra is trusted by industry leaders with millions of customers",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://getperspective.ai/blog/sierra-ai-customer-experience-conversational-agent-research-2026",
+          "title": "Sierra AI's Customer Research Strategy: How Bret Taylor's $4.5B Conversational Agent Company Listens to Enterprises",
+          "publisher": "Perspective AI blog",
+          "source_type": "other",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Deployment described by the vendor's customer page and a third-party blog; no primary press coverage retrieved."
+    },
+    {
+      "id": "telkomsel--veronika",
+      "company": "Telkomsel",
+      "company_country": "Indonesia",
+      "region": "Southeast Asia",
+      "solution_name": "Veronika",
+      "vendor": "Microsoft (Azure OpenAI)",
+      "use_case": "Serves mobile customers with product information, transactions and support across MyTelkomsel, WhatsApp and social channels, upgraded with Azure OpenAI in 2023.",
+      "department": "Customer service",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer self-service interactions",
+          "value": "rose from 19% to 45%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/id-id/2023/09/26/a-customer-service-virtual-assistant-veronika-on-mytelkomsel-is-now-integrated-with-microsoft-azure-openai-service/",
+          "title": "Telkomsel Unveils Latest Virtual Assistant Veronika, Now Integrating Microsoft Azure OpenAI Service",
+          "publisher": "Microsoft Indonesia News Center",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.telkomsel.com/about-us/news/layanan-pelanggan-asisten-virtual-veronika-di-mytelkomsel-kini-terintegrasi-teknologi",
+          "title": "Layanan Pelanggan Asisten Virtual \"Veronika\" di MyTelkomsel Kini Terintegrasi Teknologi Microsoft Azure OpenAI Service",
+          "publisher": "Telkomsel",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.microsoft.com/en/customers/story/1739790055278570755-telkomsel-azure-openai-service-telecommunications-en-indonesia",
+          "title": "Telkomsel customer support teams speak volumes — with help from copilot based on Azure OpenAI Service",
+          "publisher": "Microsoft Customer Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Company announcement (in Indonesian) plus vendor case studies; the self-service metric is vendor/company-reported with no independent verification retrieved."
+    },
+    {
+      "id": "telstra--ask-telstra-one-sentence-summary",
+      "company": "Telstra",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "solution_name": "Ask Telstra & One Sentence Summary",
+      "vendor": "Microsoft (Azure OpenAI)",
+      "use_case": "Equips frontline agents with two internal genAI tools — one searches company knowledge bases, the other condenses a customer's recent history into a one-sentence brief.",
+      "department": "Customer service",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Agents reporting increased effectiveness (One Sentence Summary pilot)",
+          "value": "90%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Reduction in call follow-ups",
+          "value": "20%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Agents reporting positive customer-interaction impact (Ask Telstra pilot)",
+          "value": "80%+",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en/customers/story/1740058425924206437-telstra-telecommunications-azure-openai-service",
+          "title": "Telstra dials in elevated customer service with Azure OpenAI Service",
+          "publisher": "Microsoft Customer Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.telstra.com.au/aboutus/media/media-releases/telstra-scales-up-ai-adoption",
+          "title": "Telstra scales up AI adoption following promising pilots of generative AI solutions",
+          "publisher": "Telstra",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.hcamag.com/au/specialisation/hr-technology/telstra-expands-rollout-of-in-house-gen-ai-tools-to-more-teams/476422",
+          "title": "Telstra expands rollout of in-house gen AI tools to more teams",
+          "publisher": "Human Resources Director",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Company release and vendor story confirmed by independent HR press; pilot metrics are company-reported from 2023 trials, with full deployment planned into 2025."
+    },
+    {
+      "id": "trip-com-group--tripgenie",
+      "company": "Trip.com Group",
+      "company_country": "China",
+      "region": "East Asia",
+      "solution_name": "TripGenie",
+      "vendor": "In-house (Trip.com Group)",
+      "use_case": "Plans and books travel for users — hotel comparison, flights, attractions, live translation — as the platform's AI travel assistant, now three years in service.",
+      "department": "E-commerce",
+      "industry": "Travel & tourism",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "AI-assisted order volume growth (YoY)",
+          "value": "≈+400%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Growth in use of core TripGenie tools (YoY)",
+          "value": "≈+300%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Clicks saved by hotel-comparison feature",
+          "value": "-80%",
+          "source_type": "press_release"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.trip.com/newsroom/introducing-tripgenie-groundbreaking-ai-travel-assistant/",
+          "title": "Introducing TripGenie: A Ground-Breaking AI Travel Assistant by Trip.com",
+          "publisher": "Trip.com Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/three-years-of-tripgenie-how-travellers-around-the-world-are-using-ai-differently-302713190.html",
+          "title": "Three Years of TripGenie: How Travellers Around the World are Using AI Differently",
+          "publisher": "PR Newswire",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.traveldailynews.com/technology/global-travel-patterns-emerge-from-three-years-of-tripgenie-ai-usage/",
+          "title": "Global travel patterns emerge from three years of TripGenie AI usage",
+          "publisher": "Travel Daily News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Three years of deployment documented by company newsroom and syndicated release, picked up by travel trade press; growth metrics are company-reported."
+    },
+    {
+      "id": "vodacom--tobi",
+      "company": "Vodacom",
+      "company_country": "South Africa",
+      "region": "Africa",
+      "solution_name": "TOBi",
+      "vendor": "Vodafone Group (built on Microsoft Azure)",
+      "use_case": "Solves customer queries for the South African telecom via SMS, WhatsApp, the My Vodacom app and the web, escalating to human consultants on request.",
+      "department": "Customer service",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer queries solved per day",
+          "value": "10,000–20,000",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Query resolution rate",
+          "value": "≈9 in 10",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://now.vodacom.co.za/trending/meet-tobi-vodacom-s-customer-service-chatbot/",
+          "title": "Meet TOBi: Vodacom's customer service chatbot",
+          "publisher": "Vodacom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.thefastmode.com/services-and-innovations/17476-vodacom-south-africa-enables-self-rica-via-chatbot-tobi",
+          "title": "Vodacom South Africa Enables 'Self-RICA' via Chatbot TOBi",
+          "publisher": "The Fast Mode",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.microsoft.com/en/customers/story/838350-vodafone-telecom-azure-cognitive-services",
+          "title": "Vodafone transforms its customer care strategy with digital assistant built on Azure Cognitive Services",
+          "publisher": "Microsoft Customer Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Company pages and vendor story with some trade coverage; daily-volume figures are company-reported."
+    },
+    {
+      "id": "vodafone--supertobi",
+      "company": "Vodafone",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "solution_name": "SuperTOBi",
+      "vendor": "Microsoft (Azure OpenAI)",
+      "use_case": "Answers complex customer enquiries such as billing in full sentences as the generative-AI successor to TOBi, rolled out across European markets after launching in Italy and Portugal.",
+      "department": "Customer service",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Improvement in first-time resolution of critical journeys (initial tests)",
+          "value": "50%",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "TOBi footprint being upgraded",
+          "value": "13 countries, 11 languages",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.vodafone.com/news/newsroom/technology/meet-super-tobi-vodafone-s-new-generative-ai-virtual-assistant-now-serving-customers-in-multiple-countries",
+          "title": "Meet SuperTOBi - Vodafone's new Generative AI virtual assistant now serving customers in multiple countries",
+          "publisher": "Vodafone Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.microsoft.com/en/customers/story/1770174778560829849-vodafone-group-azure-telecommunications-en-united-kingdom",
+          "title": "Vodafone amplifies call center innovation, customer service, and employee inclusion with Azure AI",
+          "publisher": "Microsoft Customer Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2024/07/vodafone-invests-120m-to-deploy-new-supertobi-ai-chatbot.html",
+          "title": "Vodafone Invests £120m to Deploy New SuperTOBi AI Chatbot",
+          "publisher": "ISPreview",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.techmonitor.ai/digital-economy/ai-and-automation/vodafone-ploughs-140m-into-new-supertobi-chatbot-rollout",
+          "title": "Vodafone ploughs £140m into new SuperTOBi chatbot rollout",
+          "publisher": "Tech Monitor",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Company newsroom, vendor story and independent UK tech press; retrieved sources conflict on the investment figure (£120m vs £140m), so both are kept and confidence is lowered."
+    },
+    {
+      "id": "zomato--nugget",
+      "company": "Zomato",
+      "company_country": "India",
+      "region": "South Asia",
+      "solution_name": "Nugget",
+      "vendor": "In-house (Zomato)",
+      "use_case": "Runs AI-native, no-code customer support — chat, voice agents and quality audits — for Zomato, Blinkit and Hyperpure, and is now offered to other businesses.",
+      "department": "Customer service",
+      "industry": "Food delivery",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer interactions managed per month",
+          "value": "15 million+",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Queries resolved autonomously",
+          "value": "up to 80%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-10",
+      "sources": [
+        {
+          "url": "https://www.business-standard.com/companies/news/zomato-launches-ai-customer-support-platform-nugget-125021700734_1.html",
+          "title": "Zomato unveils AI-powered platform Nugget to help businesses scale up",
+          "publisher": "Business Standard",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://analyticsindiamag.com/ai-news-updates/zomato-unveils-nugget-ai-powered-no-code-customer-support-platform/",
+          "title": "Zomato Launches Nugget, No-Code AI Agent Platform for Customer Support",
+          "publisher": "Analytics India Magazine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://www.nugget.com/",
+          "title": "Nugget: Deploy ecosystem of AI agents to own Enterprise Outcomes",
+          "publisher": "Nugget (Zomato)",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-10"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Launch and usage covered by independent Indian business and tech press; volume figures originate from the company."
+    }
+  ]
+}

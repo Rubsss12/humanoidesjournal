@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Newsreader, Archivo } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
-
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-newsreader",
-  style: ["normal", "italic"],
-  display: "swap",
-});
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -16,19 +11,17 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://le-journal-des-humanoides.example"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.example"),
   title: {
-    default:
-      "Le Journal des Humanoïdes — l’hebdomadaire de la robotique humanoïde",
-    template: "%s — Le Journal des Humanoïdes",
+    default: "Agentipedia — the living encyclopedia of AI agents at work",
+    template: "%s — Agentipedia",
   },
   description:
-    "L’hebdomadaire qui décrypte l’essor des robots humanoïdes : industrie, technologie, société. Sans emballement ni catastrophisme.",
+    "A self-updating catalog of real, verified AI agent deployments inside named companies, worldwide. Every entry names the company and the exact solution, with sources.",
   openGraph: {
-    title: "Le Journal des Humanoïdes",
-    description: "L’hebdomadaire qui décrypte l’essor des robots humanoïdes.",
+    title: "Agentipedia",
+    description: "Real companies. Named AI agents. Verified sources. Worldwide.",
     type: "website",
-    locale: "fr_FR",
   },
 };
 
@@ -36,8 +29,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${newsreader.variable} ${archivo.variable}`}>
-      <body className="font-serif antialiased">{children}</body>
+    <html lang="en" className={archivo.variable}>
+      <body className="font-sans antialiased">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
